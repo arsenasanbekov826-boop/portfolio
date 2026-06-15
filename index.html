@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Арсен Асанбеков | Портфолио</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body { 
@@ -14,8 +15,8 @@
             
             /* ТЕМНЫЙ ФИЛЬТР + ФОНОВОЕ ФОТО */
             /* Первое значение (rgba) — это затемнение фона, чтобы текст идеально читался */
-            /* Вместо 'background.jpg' укажи название своего файла */
-            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('background.jpg') no-repeat center center fixed; 
+            /* 'background.jpg'  название фона файла */
+            background: linear-gradient(rgba(18, 18, 18, 0.50), rgba(18, 18, 18, 0.50)), url('background.jpeg') no-repeat center center fixed; 
             background-size: cover; /* Растягивает картинку на весь экран */
         }
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
@@ -23,7 +24,7 @@
         header h1 { font-size: 2.5rem; margin: 0; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
         header p { font-size: 1.1rem; color: #aaaaaa; margin-top: 10px; }
         
-        /* Слегка размываем задний план у секций для эффекта матового стекла (по желанию) */
+        /* Слегка размытый задний план у секций для эффекта матового стекла */
         section { background: rgba(30, 30, 30, 0.85); backdrop-filter: blur(5px); padding: 30px; margin: 30px 0; border-radius: 8px; border: 1px solid #2d2d2d; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); }
         
         h2 { font-size: 1.6rem; margin-top: 0; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 15px; margin-bottom: 25px; }
@@ -44,6 +45,16 @@
         .btn-outline { background-color: transparent; color: #ffffff; border: 1px solid #444444; }
         .btn-outline:hover { background-color: rgba(255, 255, 255, 0.05); border-color: #ffffff; }
         footer { text-align: center; padding: 30px 0; color: #555555; font-size: 0.9rem; border-top: 1px solid #2d2d2d; }
+    /* Эффект для кликабельного сертификата */
+.achievement-box a {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+.achievement-box a:hover {
+    transform: scale(1.02); /* Картинка плавно увеличится на 2% */
+}
     </style>
 </head>
 <body>
@@ -52,7 +63,9 @@
 
         <header>
             <h1>Арсен Асанбеков</h1>
-            <p>Студент IT | Начинающий Web-разработчик</p>
+            <p style="color: #ffffff;">
+    Студент IT | Начинающий Web-разработчик
+</p>
         </header>
 
         <section>
@@ -67,16 +80,23 @@
             </p>
 
             <div class="achievement-box">
-                <h3>🏆 Достижения и опыт</h3>
-                <p><strong>Участник IT-Хакатона:</strong> Командная разработка в рамках темы «Python в искусственном интеллекте». Получен практический опыт проектирования интерфейсов. Участие подтверждено электронным сертификатом.</p>
-                <img src="certificate.jpg" alt="Сертификат участника хакатона" class="certificate-img">
-            </div>
+    <h3>Достижения и опыт</h3>
+    <p>
+        <strong>Участник IT-Хакатона (10–13 ноября 2025 г.):</strong> 
+        Командная разработка в составе команды <strong>DevStorm</strong> в рамках темы «Python в искусственном интеллекте». 
+        Получен практический опыт проектирования интерфейсов. Участие подтверждено электронным сертификатом.
+    </p>
+    
+    <a href="DevStorm.pdf" target="_blank" title="Открыть оригинал в PDF">
+        <img src="certificate.jpg" alt="Сертификат участника хакатона" class="certificate-img">
+    </a>
+</div>
         </section>
 
         <section>
             <h2>Мои проекты</h2>
             <div class="project-item">
-                <h3>DataFlow Analytics 2026 Pro (v0.4)</h3>
+                <h3>DataFlow-Analytics-2026-Pro</h3>
                 <p>Веб-приложение для анализа и визуализации данных. Позволяет загружать файлы форматов CSV и Excel, строить интерактивные графики.</p>
                 <div class="tech-stack">Технологии: HTML5, CSS3, JavaScript, Анализ данных</div>
                 <div class="btn-group">
@@ -96,7 +116,7 @@
             </div>
 
             <div class="project-item">
-                <h3>PythonAI (Хакатон)</h3>
+                <h3>PythonAI</h3>
                 <p>Проект, разработанный в составе команды. Адаптивный веб-интерфейс для демонстрации возможностей ИИ-решений на Python.</p>
                 <div class="tech-stack">Технологии: HTML5, CSS3, Python, Artificial Intelligence</div>
                 <div class="btn-group">
@@ -109,7 +129,7 @@
         <section>
             <h2>Контакты</h2>
             <div class="btn-group">
-                <a href="https://t.me/Destrion10" target="_blank" class="btn btn-primary"><i class="fab fa-telegram"></i> Telegram</a>
+                <a href="https://t.me/Destrion10" target="_blank" class="btn btn-outline"><i class="fab fa-telegram"></i> Telegram</a>
                 <a href="https://wa.me/996701965003" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 
                 <button onclick="copyEmail()" id="email-btn" class="btn btn-outline">
