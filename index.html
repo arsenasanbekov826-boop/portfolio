@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арсен Асанбеков | Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            color: #ffffff; 
+            
+            /* ТЕМНЫЙ ФИЛЬТР + ФОНОВОЕ ФОТО */
+            /* Первое значение (rgba) — это затемнение фона, чтобы текст идеально читался */
+            /* Вместо 'background.jpg' укажи название своего файла */
+            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('background.jpg') no-repeat center center fixed; 
+            background-size: cover; /* Растягивает картинку на весь экран */
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; padding: 40px 0; border-bottom: 1px solid #2d2d2d; }
+        header h1 { font-size: 2.5rem; margin: 0; letter-spacing: 2px; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+        header p { font-size: 1.1rem; color: #aaaaaa; margin-top: 10px; }
+        
+        /* Слегка размываем задний план у секций для эффекта матового стекла (по желанию) */
+        section { background: rgba(30, 30, 30, 0.85); backdrop-filter: blur(5px); padding: 30px; margin: 30px 0; border-radius: 8px; border: 1px solid #2d2d2d; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); }
+        
+        h2 { font-size: 1.6rem; margin-top: 0; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 15px; margin-bottom: 25px; }
+        h3 { font-size: 1.3rem; margin-top: 0; margin-bottom: 10px; color: #ffffff; }
+        p { line-height: 1.6; color: #cccccc; margin-bottom: 15px; }
+        .achievement-box { margin-top: 25px; padding: 20px; border-left: 4px solid #ffffff; background: #252525; border-radius: 0 8px 8px 0; }
+        .certificate-img { max-width: 100%; height: auto; border-radius: 6px; margin-top: 15px; border: 1px solid #3d3d3d; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); }
+        .project-item { margin-bottom: 35px; padding-bottom: 25px; border-bottom: 1px solid #2d2d2d; }
+        .project-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+        .tech-stack { font-size: 0.85rem; color: #888888; margin-bottom: 15px; }
+        .btn-group { margin-top: 15px; }
+        
+        /* Стили кнопок */
+        .btn { display: inline-block; padding: 8px 18px; margin-right: 10px; margin-bottom: 10px; font-size: 0.9rem; font-weight: 600; text-decoration: none; border-radius: 6px; transition: all 0.2s ease; border: none; cursor: pointer; }
+        .btn i { margin-right: 8px; font-size: 1rem; vertical-align: middle; }
+        .btn-primary { background-color: #ffffff; color: #121212; border: 1px solid #ffffff; }
+        .btn-primary:hover { background-color: #cccccc; border-color: #cccccc; }
+        .btn-outline { background-color: transparent; color: #ffffff; border: 1px solid #444444; }
+        .btn-outline:hover { background-color: rgba(255, 255, 255, 0.05); border-color: #ffffff; }
+        footer { text-align: center; padding: 30px 0; color: #555555; font-size: 0.9rem; border-top: 1px solid #2d2d2d; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Арсен Асанбеков</h1>
+            <p>Студент IT | Начинающий Web-разработчик</p>
+        </header>
+
+        <section>
+            <h2>Обо мне</h2>
+            <p>
+                Родился 23 ноября 2008 года. В 2024 году я поступил в Институт инновационных профессий (ИИП), сейчас заканчиваю второй курс 
+                по направлению «Техническое обслуживание вычислительной техники и компьютерных сетей».
+            </p>
+            <p>
+                Изучаю веб-разработку (HTML, CSS, JavaScript) и основы программирования (Python, Java). 
+                Активно работаю над созданием собственных проектов.
+            </p>
+
+            <div class="achievement-box">
+                <h3>🏆 Достижения и опыт</h3>
+                <p><strong>Участник IT-Хакатона:</strong> Командная разработка в рамках темы «Python в искусственном интеллекте». Получен практический опыт проектирования интерфейсов. Участие подтверждено электронным сертификатом.</p>
+                <img src="certificate.jpg" alt="Сертификат участника хакатона" class="certificate-img">
+            </div>
+        </section>
+
+        <section>
+            <h2>Мои проекты</h2>
+            <div class="project-item">
+                <h3>DataFlow Analytics 2026 Pro (v0.4)</h3>
+                <p>Веб-приложение для анализа и визуализации данных. Позволяет загружать файлы форматов CSV и Excel, строить интерактивные графики.</p>
+                <div class="tech-stack">Технологии: HTML5, CSS3, JavaScript, Анализ данных</div>
+                <div class="btn-group">
+                    <a href="https://arsenasanbekov826-boop.github.io/DataFlow-Analytics-2026-Pro-0.4/" target="_blank" class="btn btn-primary">Запустить сайт</a>
+                    <a href="https://github.com/arsenasanbekov826-boop/DataFlow-Analytics-2026-Pro-0.4" target="_blank" class="btn btn-outline">Код на GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>Street Pulses</h3>
+                <p>Современный веб-сайт интернет-магазина обуви с адаптивным дизайном и интерактивными карточками товаров.</p>
+                <div class="tech-stack">Технологии: HTML5, CSS3, JavaScript, Веб-дизайн</div>
+                <div class="btn-group">
+                    <a href="https://arsenasanbekov826-boop.github.io/shoe-store-04/" target="_blank" class="btn btn-primary">Запустить сайт</a>
+                    <a href="https://github.com/arsenasanbekov826-boop/shoe-store-04" target="_blank" class="btn btn-outline">Код на GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <h3>PythonAI (Хакатон)</h3>
+                <p>Проект, разработанный в составе команды. Адаптивный веб-интерфейс для демонстрации возможностей ИИ-решений на Python.</p>
+                <div class="tech-stack">Технологии: HTML5, CSS3, Python, Artificial Intelligence</div>
+                <div class="btn-group">
+                    <a href="https://ufkana.github.io/PythonAI" target="_blank" class="btn btn-primary">Запустить сайт</a>
+                    <a href="https://github.com/ufkana/PythonAI" target="_blank" class="btn btn-outline">Код на GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Контакты</h2>
+            <div class="btn-group">
+                <a href="https://t.me/Destrion10" target="_blank" class="btn btn-primary"><i class="fab fa-telegram"></i> Telegram</a>
+                <a href="https://wa.me/996701965003" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                
+                <button onclick="copyEmail()" id="email-btn" class="btn btn-outline">
+                    <i class="fa-solid fa-envelope"></i> <span id="email-text">Скопировать Gmail</span>
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Портфолио.</p>
+        </footer>
+    </div>
+
+    <script>
+        function copyEmail() {
+            const email = "arsenasanbekov826@gmail.com"; 
+            navigator.clipboard.writeText(email).then(() => {
+                const btnText = document.getElementById('email-text');
+                const btn = document.getElementById('email-btn');
+                
+                btnText.innerText = "Адрес скопирован!";
+                btn.style.borderColor = "#ffffff";
+                btn.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+                
+                setTimeout(() => {
+                    btnText.innerText = "Скопировать Gmail";
+                    btn.style.backgroundColor = "transparent";
+                    btn.style.borderColor = "#444444";
+                }, 3000);
+            }).catch(err => {
+                console.error('Ошибка копирования: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
